@@ -45,6 +45,11 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
 ]
 
+
+# * You can set your default template pack for your project using the CRISPY_TEMPLATE_PACK 
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
