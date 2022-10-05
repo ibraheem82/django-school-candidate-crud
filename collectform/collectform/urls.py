@@ -6,8 +6,15 @@ from formapp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.Read.as_view(), name="read"),
+    # * CREATE
     path('create/', views.Create.as_view(), name="create"),
+
+    # * READ
+    path('', views.Read.as_view(), name="read"),
+
+    # * UPDATE
     path('update/<int:pk>/', views.Update.as_view(), name="update"),
+
+    # * DELETE
     path('delete/<int:pk>/', views.Delete.as_view(), name="delete")
 ]
