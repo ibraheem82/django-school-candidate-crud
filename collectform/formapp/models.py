@@ -20,11 +20,11 @@ CLASS  = (
 
 
 class Candidate(models.Model):
-    name       = models.CharField(max_length=80)
-    phone      = models.CharField(max_length=30)
-    email      = models.CharField(max_length=120)
-    gender     = models.CharField(max_length=1,null=True, choices=GENDER)
-    career     = models.CharField(max_length=80, null=True, choices=CLASS)
+    name                = models.CharField(max_length=80)
+    phone               = models.CharField(max_length=30)
+    email               = models.CharField(max_length=120)
+    gender              = models.CharField(max_length=1,null=True, choices=GENDER)
+    student_class        = models.CharField(max_length=80, null=True, choices=CLASS)
     
     
     
